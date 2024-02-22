@@ -9,31 +9,99 @@
 </head>
 
 <body>
-  <div class="container">
-    <h1>TeamProject</h1>
-    <p>Welcome to the mini CS world</p>
-  </div>
-  <div class=header>
-    <a href="about.html" class="#">About</a>
-    <a>Subjects</a>
-    <a class="subjects" href="#section-below">Subjects &#8595;</a>
-    <form action="/search" method="GET">
-      <input type="text" name="q" placeholder="Enter your search query">
-        <input type="submit" value="Search">
-    </form>
+  <header>
+    <div class="container">
+      <h1>Team Project</h1>
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#subjects">Subjects</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Search">
+        <button type="submit">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="middle">
+    <div class="video-section">
+      <!-- YouTube video uploads go here -->
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/p6sFXrBapSY?si=2mebV21YYkw_jgkG"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <!-- You can add more video containers for additional videos -->
+    </div>
+  
+    <div class="description-section">
+      <!-- Video description goes here -->
+      <h2>Video Title</h2>
+      <p>This video is about executing MapReduce program - analysis of weather data - using cloudera Virtual Machine.</p>
+    </div>
   </div>
 
-  <div>
+  <div class="middle">
+    <div class="video-section">
+      <!-- YouTube video uploads go here -->
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/q1VeM_fCewU?si=Vdb-Yx9OTULgXUAd"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <!-- You can add more video containers for additional videos -->
+    </div>
+  
+    <div class="description-section">
+      <!-- Video description goes here -->
+      <h2>Video Title</h2>
+      <p>This is the description of the video. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac enim vel
+        urna congue laoreet. Donec aliquam metus vel odio suscipit, vitae ultricies libero cursus. Pellentesque habitant
+        morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </div>
+  </div>
 
+  <div class="middle">
+    <div class="video-section">
+      <!-- YouTube video uploads go here -->
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gkIWz244uak?si=BFJgOU_cpRmaAUfQ"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <!-- You can add more video containers for additional videos -->
+    </div>
+  
+    <div class="description-section">
+      <!-- Video description goes here -->
+      <h2>Video Title</h2>
+      <p>This is the description of the video. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac enim vel
+        urna congue laoreet. Donec aliquam metus vel odio suscipit, vitae ultricies libero cursus. Pellentesque habitant
+        morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </div>
   </div>
 
   <footer>
-    <ul>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-    </ul>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <p>&copy; <span id="currentYear"></span> My Website. All rights reserved.</p>
+    </div>
   </footer>
-
+  
+  <script>
+    // Get current year and update the span with id "currentYear"
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>

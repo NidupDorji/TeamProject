@@ -97,3 +97,8 @@ nav ul li a {
 h2 {
   margin-top: 0;
 }
+
+.about-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}

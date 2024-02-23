@@ -54,6 +54,18 @@
 
 <body>
   <header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="menu-overlay" id="menuOverlay">
+      <ul>
+        <li><button id="toggleTheme">Toggle Theme</button></li>
+        <li><a href="#">Menu Item 2</a></li>
+        <li><a href="#">Menu Item 3</a></li>
+      </ul>
+    </div>
     <div class="container">
       <h1>Subjects</h1>
     </div>
@@ -129,10 +141,7 @@
     </div>
   </footer>
 
-  <script>
-    // Get current year and update the span with id "currentYear"
-    document.getElementById("currentYear").textContent = new Date().getFullYear();
-  </script>
+  <script src="scripts.js"></script>
 </body>
 
 </html>

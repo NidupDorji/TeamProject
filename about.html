@@ -11,13 +11,19 @@
 <body>
   <header>
     <div class="container">
-      <!-- <div class="hamburger-menu">
+      <div class="hamburger-menu" onclick="toggleMenu()">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
-      </div> -->
+      </div>
+      <div class="menu-overlay" id="menuOverlay">
+        <ul>
+          <li><button id="toggleTheme">Toggle Theme</button></li>
+          <li><a href="#">Menu Item 2</a></li>
+          <li><a href="#">Menu Item 3</a></li>
+        </ul>
+      </div>
   
-      <script src="script.js"></script>
       <div class="title">
         <h1>About Team Project</h1>
       </div>
@@ -42,5 +48,6 @@
       <p>&copy; <span id="currentYear"></span> Team Projecto. All rights reserved.</p>
     </div>
   </footer>
-
-</html>
+    <script src="scripts.js"></script>
+  </body>
+  </html>

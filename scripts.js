@@ -1,5 +1,8 @@
-const menu = document.querySelector('.hamburger-menu');
+function toggleMenu() {
+    var menuOverlay = document.getElementById("menuOverlay");
+    var inner_body = document.getElementById("inner_body");
+    menuOverlay.classList.toggle("open");
+    inner_body.classList.toggle("menu-open")
+}
 
-menu.addEventListener('click', () => {
-  menu.classList.toggle('open');
-});
+document.getElementById("currentYear").textContent = new Date().getFullYear();

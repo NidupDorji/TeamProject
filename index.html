@@ -11,13 +11,19 @@
 <body>
   <header>
     <div class="container">
-      <div class="hamburger-menu">
+      <div class="hamburger-menu" onclick="toggleMenu()">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      
-      <script src="script.js"></script>
+      <div class="menu-overlay" id="menuOverlay">
+      <ul>
+        <li><a href="#">Menu Item 1</a></li>
+        <li><a href="#">Menu Item 2</a></li>
+        <li><a href="#">Menu Item 3</a></li>
+      </ul>
+      </div>
+
       <div class="title">
         <h1>Team Projecto</h1>
       </div>
@@ -32,87 +38,89 @@
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
-      
     </div>
   </header>
 
-  <div class="intro_outer">
-    <div class="inner_1">
-      <h1>Introduction</h1>
-      <p>Welcome to our comprehensive online platform, where learning meets innovation and exploration!</p>
+  <div id="inner_body">
+    <div class="intro_outer">
+      <div class="inner_1">
+        <h1>Introduction</h1>
+        <p>Welcome to our comprehensive online platform, where learning meets innovation and exploration!</p>
+      </div>
+      <div class="inner_2">
+        <p>Dive into a world of knowledge with our vast collection of videos and meticulously crafted roadmaps covering
+          diverse
+          subjects such as big data, mathematics, artificial intelligence, gaming, and machine learning. Whether you're a
+          novice
+          seeking to grasp the fundamentals or a seasoned professional aiming to stay ahead of the curve, our platform
+          offers
+          tailored resources to suit your learning journey. Join our community today and embark on a transformative learning
+          experience that empowers you to conquer new horizons in the ever-evolving landscape of technology and beyond.</p>
+      </div>
     </div>
-    <div class="inner_2">
-      <p>Dive into a world of knowledge with our vast collection of videos and meticulously crafted roadmaps covering diverse
-      subjects such as big data, mathematics, artificial intelligence, gaming, and machine learning. Whether you're a novice
-      seeking to grasp the fundamentals or a seasoned professional aiming to stay ahead of the curve, our platform offers
-      tailored resources to suit your learning journey. Join our community today and embark on a transformative learning
-      experience that empowers you to conquer new horizons in the ever-evolving landscape of technology and beyond.</p>
-    </div>
-  </div>
-
-
-  <div class="middle">
-    <div class="mid_name">
-      <h1>Top 3 Videos</h1>
-    </div>
-    <div class="top_videos">
-      <div class="video-section">
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/p6sFXrBapSY?si=2mebV21YYkw_jgkG"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+    
+    
+    <div class="middle">
+      <div class="mid_name">
+        <h1>Top 3 Videos</h1>
+      </div>
+      <div class="top_videos">
+        <div class="video-section">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/p6sFXrBapSY?si=2mebV21YYkw_jgkG"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="description-section">
+            <h3>MapReduce Program</h3>
+            <p>This video is about executing MapReduce program - analysis of weather data - using cloudera Virtual Machine.
+            </p>
+          </div>
         </div>
-        <div class="description-section">
-          <h3>MapReduce Program</h3>
-          <p>This video is about executing MapReduce program - analysis of weather data - using cloudera Virtual Machine.</p>
+    
+        <div class="video-section">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/q1VeM_fCewU?si=Vdb-Yx9OTULgXUAd"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="description-section">
+            <h3>Hu Tao obliterates the Ruin Guard</h3>
+            <p>This video is showing a team of Hutao destroying a pesky ruin guard</p>
+          </div>
+        </div>
+    
+        <div class="video-section">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gkIWz244uak?si=BFJgOU_cpRmaAUfQ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="description-section">
+            <h3>Fishcl being weird?</h3>
+            <p>This video is about Fischl acting weird than usual.</p>
+          </div>
         </div>
       </div>
-
-      <div class="video-section">
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/q1VeM_fCewU?si=Vdb-Yx9OTULgXUAd"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+    
+      <footer>
+        <div class="container">
+          <nav>
+            <ul>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </nav>
+          <p>&copy; <span id="currentYear"></span> Team Projecto. All rights reserved.</p>
         </div>
-        <div class="description-section">
-          <h3>Hu Tao obliterates the Ruin Guard</h3>
-          <p>This video is showing a team of Hutao destroying a pesky ruin guard</p>
-        </div>
-      </div>
-      
-      <div class="video-section">
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/gkIWz244uak?si=BFJgOU_cpRmaAUfQ"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-        <div class="description-section">
-          <h3>Fishcl being weird?</h3>
-          <p>This video is about Fischl acting weird than usual.</p>
-      </div> 
-    </div>
+      </footer>
   </div>
-
-  <footer>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </nav>
-      <p>&copy; <span id="currentYear"></span> Team Projecto. All rights reserved.</p>
-    </div>
-  </footer>
   
-  <script>
-    // Get current year and update the span with id "currentYear"
-    document.getElementById("currentYear").textContent = new Date().getFullYear();
-    src="script.js"
-  </script>
+  
+  <script src="scripts.js"></script>
 </body>
 
 </html>

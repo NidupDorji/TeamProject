@@ -57,7 +57,10 @@ footer {
 } 
 
 #inner_body.menu-open {
+  filter: blur(7px);
   opacity: 0.6;
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9); */
+  /* filter: grayscale(100%); */
   /* Change background color of body when menu is open */
 }
 

@@ -1,4 +1,12 @@
+:root {
+  --background-color: #white;
+  --text-color: #000000;
+  font-family: Arial, sans-serif;
+}
+
 body {
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -37,12 +45,11 @@ footer {
 }
 
 .menu-overlay {
-  /* position: fixed; */
   position: absolute;
   top: 86px;
   left: -300px;
   /* Initially off-screen */
-  width: 175px;
+  width: 200px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   transition: left 0.5s ease;
@@ -231,3 +238,10 @@ footer{
   color: white;
   text-align: center;
 }
+
+/* Additional styles for light mode */
+.dark-mode {
+  --background-color: #000000;
+  --text-color: #white;
+}
+/* Additional styles for dark mode */

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subjects</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional styles for subject boxes */
+    .subject-box {
+      width: calc(25% - 40px); /* 25% width with margins */
+      height: 300px; /* Increased height */
+      background-color: #f0f0f0;
+      border: 2px solid #ccc;
+      margin: 20px;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out; /* Add transition */
+    }
+
+    .subject-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .subject-box:hover {
+      transform: scale(1.05); /* Zoom effect on hover */
+    }
+
+    .subject-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+      color: white;
+      padding: 10px;
+      box-sizing: border-box;
+      transform: translateY(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .subject-box:hover .subject-info {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Subjects</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Mathematics -->
+    <div class="subject-box">
+      <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*L76A5gL6176UbMgn7q4Ybg.jpeg" alt="Mathematics">
+      <div class="subject-info">
+        <h2>Mathematics</h2>
+        <p>Click here for resources related to mathematics.</p>
+      </div>
+    </div>
+
+    <!-- Big Data -->
+    <div class="subject-box">
+      <img src="https://cerebra-consulting.com/wp-content/uploads/2019/06/shutterstock_226482685.jpg" alt="Big Data">
+      <div class="subject-info">
+        <h2>Big Data</h2>
+        <p>Click here for resources related to Big Data.</p>
+      </div>
+    </div>
+
+    <!-- Artificial Intelligence -->
+    <div class="subject-box">
+      <img src="https://urbeuniversity.edu/post_assets/Le9zsr8bQmv7gmZW40UXiVaPsGcpVwaY65mw28tU.webp" alt="Artificial Intelligence">
+      <div class="subject-info">
+        <h2>Artificial Intelligence</h2>
+        <p>Click here for resources related to Artificial Intelligence.</p>
+      </div>
+    </div>
+
+    <!-- Machine Learning -->
+    <div class="subject-box">
+      <img src="https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/machine-learning-pillar-page-overview.jpeg" alt="Machine Learning">
+      <div class="subject-info">
+        <h2>Machine Learning</h2>
+        <p>Click here for resources related to Machine Learning.</p>
+      </div>
+    </div>
+
+    <!-- Gaming -->
+    <div class="subject-box">
+      <img src="https://techcrunch.com/wp-content/uploads/2023/08/GettyImages-1424828162.jpg?w=600" alt="Gaming">
+      <div class="subject-info">
+        <h2>Gaming</h2>
+        <p>Click here for resources related to Gaming.</p>
+      </div>
+    </div>
+
+    <!-- Algorithms -->
+    <div class="subject-box">
+      <img src="https://codeprogramming.org/wp-content/uploads/2020/06/algorithms-in-programming.jpg" alt="Algorithms">
+      <div class="subject-info">
+        <h2>Algorithms</h2>
+        <p>Click here for resources related to Algorithms.</p>
+      </div>
+    </div>
+
+    <!-- Additional subjects can be added here -->
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="currentYear"></span> My Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Get current year and update the span with id "currentYear"
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
